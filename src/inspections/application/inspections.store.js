@@ -19,7 +19,7 @@ const sectionApi = new SectionApi();
  *
  * @returns {Object} Store state and actions.
  */
-const useSectionStore = defineStore('section', () => {
+export const useSectionStore = defineStore('section', () => {
     /**
      * List of category entities.
      * @type {import('vue').Ref<Category[]>}
