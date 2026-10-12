@@ -34,40 +34,7 @@ onMounted(() => {
   sectionStore.fetchCatalogs();
 });
 
-const inspections = [
-  {
-    id: "IN-2048",
-    machine: "Haul Truck HT-204",
-    inspector: "Alex Morgan",
-    date: "2026-10-10",
-    status: "inProgress",
-    operatingHours: 8421,
-  },
-  {
-    id: "IN-2047",
-    machine: "Excavator EX-112",
-    inspector: "Jordan Lee",
-    date: "2026-10-08",
-    status: "completed",
-    operatingHours: 6150,
-  },
-  {
-    id: "IN-2046",
-    machine: "Drill Rig DR-08",
-    inspector: "Taylor Kim",
-    date: "2026-10-06",
-    status: "pending",
-    operatingHours: 3924,
-  },
-  {
-    id: "IN-2045",
-    machine: "Loader LD-036",
-    inspector: "Casey Rivera",
-    date: "2026-10-03",
-    status: "completed",
-    operatingHours: 7288,
-  },
-];
+
 </script>
 
 <template>
