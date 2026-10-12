@@ -1,8 +1,8 @@
 {
-  "name": "learning-center",
+  "name": "GeoMine",
   "private": true,
   "version": "1.1.0",
-  "description": "ACME Learning Center is web platform for learning and development. It is intended to illustrate Domain-Driven Design (DDD) principles. It is built with Vue, Axios, Vite, Pinia, PrimeVue, with JavaScript.",
+  "description": "Company GeoMine is a leading provider of geospatial solutions, specializing in the development and implementation of advanced mapping technologies. Our mission is to empower businesses and organizations with accurate and actionable geospatial data, enabling them to make informed decisions and optimize their operations. With a team of experienced professionals and a commitment to innovation, GeoMine delivers cutting-edge solutions that drive efficiency, enhance productivity, and unlock new opportunities for our clients.",
   "type": "module",
   "scripts": {
     "dev": "vite",
