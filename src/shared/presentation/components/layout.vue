@@ -14,8 +14,8 @@ const toggleDrawer = () => {
 }
 const items = [
   {label: 'option.home', to: '/home'},
-  {label: 'option.categories', to: '/publishing/categories'},
-  {label: 'option.tutorials', to: '/publishing/tutorials'}
+  {label: 'option.inspections', to: '/publishing/inspections'},
+  {label: 'option.telemetry', to: '/publishing/telemetry'}
 ];
 </script>
 
@@ -44,5 +44,4 @@ const items = [
   <main class="mt-7">
     <router-view/>
   </main>
-  <footer-content/>
 </template>
