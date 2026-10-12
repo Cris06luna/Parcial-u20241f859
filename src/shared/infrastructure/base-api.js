@@ -20,9 +20,9 @@ export class BaseApi {
     /**
      * Initializes the Axios HTTP client with the base URL from environment variables
      */
-    constructor() {
+    constructor(baseURL = platformApi) {
         this.#http = axios.create({
-            baseURL: platformApi,
+            baseURL,
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*'

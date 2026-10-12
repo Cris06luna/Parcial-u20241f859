@@ -10,6 +10,14 @@
     "toggle": "Toggle navigation",
     "close": "Close navigation"
   },
+  "common": {
+    "loading": "Loading...",
+    "saving": "Saving...",
+    "notAvailable": "Not available",
+    "loadError": "Some information could not be loaded. Please try again.",
+    "catalogError": "The section and machinery catalogs could not be loaded.",
+    "saveError": "The telemetry reading could not be saved."
+  },
   "authoring-phrase": {
     "intro": "Made with",
     "use": "using",
@@ -31,6 +39,8 @@
     "summary": "Inspection Summary",
     "total": "inspections",
     "hours": "operating hours",
+    "empty": "No inspections are available yet.",
+    "unknownInspector": "Inspector not specified",
     "status": {
       "inProgress": "In progress",
       "completed": "Completed",
@@ -53,6 +63,17 @@
   "telemetry": {
     "eyebrow": "MACHINERY MONITORING",
     "title": "New Telemetry",
+    "machineryCode": "Machinery code",
+    "section": "Pit section",
+    "selectSection": "Select a pit section",
+    "model": "Machinery model",
+    "selectModel": "Select a machinery model",
+    "operatingHours": "Operating hours",
+    "engineTemperature": "Engine temperature (°C)",
+    "oilPressure": "Oil pressure (psi)",
+    "alertTriggered": "Alert triggered",
+    "save": "Save telemetry",
+    "cancel": "Cancel",
     "id": "ID",
     "summary": "Summary",
     "category-id": "Category ID",

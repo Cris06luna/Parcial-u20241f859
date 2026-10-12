@@ -10,6 +10,14 @@
     "toggle": "Alternar navegación",
     "close": "Cerrar navegación"
   },
+  "common": {
+    "loading": "Cargando...",
+    "saving": "Guardando...",
+    "notAvailable": "No disponible",
+    "loadError": "No se pudo cargar toda la información. Inténtalo de nuevo.",
+    "catalogError": "No se pudieron cargar los catálogos de secciones y maquinaria.",
+    "saveError": "No se pudo guardar la lectura de telemetría."
+  },
   "authoring-phrase": {
     "intro": "Hecho con",
     "use": "usando",
@@ -31,6 +39,8 @@
     "summary": "Resumen de la Inspección",
     "total": "inspecciones",
     "hours": "horas de operación",
+    "empty": "Todavía no hay inspecciones disponibles.",
+    "unknownInspector": "Inspector no especificado",
     "status": {
       "inProgress": "En progreso",
       "completed": "Completado",
@@ -53,6 +63,17 @@
   "telemetry": {
     "eyebrow": "MONITOREO DE MÁQUINAS",
     "title": "Nueva Telemetría",
+    "machineryCode": "Código de maquinaria",
+    "section": "Sección de la mina",
+    "selectSection": "Selecciona una sección",
+    "model": "Modelo de maquinaria",
+    "selectModel": "Selecciona un modelo",
+    "operatingHours": "Horas de operación",
+    "engineTemperature": "Temperatura del motor (°C)",
+    "oilPressure": "Presión de aceite (psi)",
+    "alertTriggered": "Alerta activada",
+    "save": "Guardar telemetría",
+    "cancel": "Cancelar",
     "id": "ID",
     "summary": "Resumen",
     "category-id": "ID de Categoría"
