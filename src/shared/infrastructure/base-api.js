@@ -28,8 +28,6 @@ export class BaseApi {
                 'Access-Control-Allow-Origin': '*'
             },
         });
-        // Add interceptors for request/response if needed
-        // this.#http.interceptors.request.use(iamInterceptor);
     }
 
     /**
