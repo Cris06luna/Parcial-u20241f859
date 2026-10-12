@@ -1,0 +1,60 @@
+{
+  "option": {
+    "home": "Inicio",
+    "inspections": "Inspecciones",
+    "telemetry": "Nueva Telemetría"
+  },
+  "navigation": {
+    "main": "Navegación principal",
+    "language": "Idioma",
+    "toggle": "Alternar navegación",
+    "close": "Cerrar navegación"
+  },
+  "authoring-phrase": {
+    "intro": "Hecho con",
+    "use": "usando",
+    "author": "Cristina Yarleque - u20241f859"
+  },
+  "home": {
+    "eyebrow": "VISTA GENERAL DE LA SUPERVISIÓN",
+    "title": "Inicio",
+    "content": "La Mejor Supervisión en el Mundo."
+  },
+  "page-not-found": {
+    "title": "Página No Encontrada",
+    "content": "La ruta {unavailable-route} no está disponible.",
+    "go-home": "Ir a Inicio"
+  },
+  "inspections": {
+    "eyebrow": "ACTIVIDAD EN EL CAMPO",
+    "title": "Mis Inspecciones",
+    "summary": "Resumen de la Inspección",
+    "total": "inspecciones",
+    "hours": "horas de operación",
+    "status": {
+      "inProgress": "En progreso",
+      "completed": "Completado",
+      "pending": "Pendiente"
+    },
+    "id": "ID",
+    "name": "Nombre",
+    "actions": "Acciones",
+    "new": "Nueva Inspección",
+    "confirm-delete": "¿Estás seguro de que quieres eliminar {name}?",
+    "delete-header": "Confirmar Eliminación"
+  },
+  "category": {
+    "new-title": "Crear Nueva Categoría",
+    "edit-title": "Editar Categoría",
+    "name": "Nombre",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "telemetry": {
+    "eyebrow": "MONITOREO DE MÁQUINAS",
+    "title": "Nueva Telemetría",
+    "id": "ID",
+    "summary": "Resumen",
+    "category-id": "ID de Categoría"
+  }
+}
