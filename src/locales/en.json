@@ -1,0 +1,76 @@
+{
+  "option": {
+    "home": "Home",
+    "inspections": "Inspections",
+    "telemetry": "New Telemetry"
+  },
+  "navigation": {
+    "main": "Main navigation",
+    "language": "Language",
+    "toggle": "Toggle navigation",
+    "close": "Close navigation"
+  },
+  "authoring-phrase": {
+    "intro": "Made with",
+    "use": "using",
+    "author": "Cristina Yarleque - u20241f859"
+  },
+  "home": {
+    "eyebrow": "SUPERVISION OVERVIEW",
+    "title": "Home",
+    "content": "The Best Supervision on the world."
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path {unavailable-route} is not available.",
+    "go-home": "Go Home"
+  },
+  "inspections": {
+    "eyebrow": "FIELD ACTIVITY",
+    "title": "My Inspections",
+    "summary": "Inspection Summary",
+    "total": "inspections",
+    "hours": "operating hours",
+    "status": {
+      "inProgress": "In progress",
+      "completed": "Completed",
+      "pending": "Pending"
+    },
+    "id": "ID",
+    "name": "Name",
+    "actions": "Actions",
+    "new": "New Inspection",
+    "confirm-delete": "Are you sure you want to delete {name}?",
+    "delete-header": "Confirm Deletion"
+  },
+  "category": {
+    "new-title": "Create New Category",
+    "edit-title": "Edit Category",
+    "name": "Name",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "telemetry": {
+    "eyebrow": "MACHINERY MONITORING",
+    "title": "New Telemetry",
+    "id": "ID",
+    "summary": "Summary",
+    "category-id": "Category ID",
+    "actions": "Actions",
+    "new": "New Tutorial",
+    "confirm-delete": "Are you sure you want to delete {title}?",
+    "delete-header": "Confirm Deletion"
+  },
+  "tutorial": {
+    "new-title": "Create New Tutorial",
+    "edit-title": "Edit Tutorial",
+    "title": "Title",
+    "summary": "Summary",
+    "category": "Category",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "errors": {
+    "occurred": "Errors occurred"
+  }
+}

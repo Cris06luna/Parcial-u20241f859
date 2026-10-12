@@ -1,47 +1,64 @@
 <script setup>
-
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
 import LanguageSwitcher from "./language-switcher.vue";
-import {ref} from "vue";
-import {useI18n} from "vue-i18n";
-const { t } = useI18n();
 
-const drawer = ref(false);
-const toggleDrawer = () => {
-  /**
-   * Toggles the state of the drawer between open and closed.
-   */
-  drawer.value = !drawer.value;
-}
-const items = [
-  {label: 'option.home', to: '/home'},
-  {label: 'option.inspections', to: '/publishing/inspections'},
-  {label: 'option.telemetry', to: '/publishing/telemetry'}
+const { t } = useI18n();
+const sidebarOpen = ref(false);
+
+const navigationItems = [
+  { label: "option.home", to: "/home", icon: "pi pi-home" },
+  { label: "option.telemetry", to: "/telemetry/new", icon: "pi pi-chart-line" },
 ];
 </script>
 
 <template>
-  <pv-toast/>
-  <pv-confirm-dialog/>
-  <header class="absolute top-0 left-0 w-full">
-    <pv-toolbar class="bg-primary">
-      <template #start>
-        <pv-button class="p-button-text" icon="pi pi-bars" @click="toggleDrawer"/>
-        <h3>ACME Learning Center</h3>
-      </template>
-      <template #end>
-        <div class="flex-column mr-3">
-          <pv-button v-for="item in items" :key="item.label" as-child v-slot="slotProps">
-            <router-link :to="item.to" :class="slotProps['class']">{{ t(item.label) }}</router-link>
-          </pv-button>
-        </div>
-        <!-- To add when IAM is implemented -->
-        <!--<authentication-section/>-->
-        <language-switcher/>
-      </template>
-    </pv-toolbar>
-    <pv-drawer v-model:visible="drawer"/>
-  </header>
-  <main class="mt-7">
-    <router-view/>
-  </main>
+  <pv-toast />
+  <pv-confirm-dialog />
+  <div class="app-shell">
+    <button
+      class="sidebar-toggle"
+      type="button"
+      :aria-label="t('navigation.toggle')"
+      @click="sidebarOpen = !sidebarOpen"
+    >
+      <i class="pi pi-bars" aria-hidden="true"></i>
+    </button>
+    <button
+      v-if="sidebarOpen"
+      class="sidebar-backdrop"
+      type="button"
+      :aria-label="t('navigation.close')"
+      @click="sidebarOpen = false"
+    ></button>
+
+    <aside class="app-sidebar" :class="{ 'app-sidebar--open': sidebarOpen }">
+      <router-link class="brand" to="/home" @click="sidebarOpen = false">
+        <span class="brand-mark"><i class="pi pi-compass" aria-hidden="true"></i></span>
+        <span>GeoMine</span>
+      </router-link>
+
+      <nav class="sidebar-navigation" :aria-label="t('navigation.main')">
+        <router-link
+          v-for="item in navigationItems"
+          :key="item.to"
+          class="sidebar-link"
+          :to="item.to"
+          @click="sidebarOpen = false"
+        >
+          <i :class="item.icon" aria-hidden="true"></i>
+          <span>{{ t(item.label) }}</span>
+        </router-link>
+      </nav>
+
+      <div class="sidebar-language">
+        <span class="sidebar-language-label">{{ t("navigation.language") }}</span>
+        <LanguageSwitcher />
+      </div>
+    </aside>
+
+    <main class="app-main">
+      <router-view />
+    </main>
+  </div>
 </template>
